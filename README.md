@@ -244,9 +244,6 @@ REACT_APP_API_URL=http://localhost:8080
 
 This project is open source and available for personal use.
 
-## 👤 Author
-
-Your Name - [Your GitHub](https://github.com/yourusername)
 
 ## 🤝 Contributing
 
