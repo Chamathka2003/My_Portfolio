@@ -36,13 +36,84 @@
   border-bottom: 2px solid rgba(77, 166, 255, 0.3);
 }
 
+.project-carousel {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #000;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(77, 166, 255, 0.7);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.carousel-btn:hover {
+  background: rgba(77, 166, 255, 0.9);
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #4da6ff;
+  width: 12px;
+  height: 12px;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
 .placeholder-text {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1rem;
   font-weight: 500;
 }
 
-.project-card > *:not(.project-image-placeholder) {
+.project-card > *:not(.project-image-placeholder):not(.project-carousel) {
   padding: 0 30px;
 }
 

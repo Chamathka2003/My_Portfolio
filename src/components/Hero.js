@@ -7,7 +7,11 @@ function Hero() {
       <div className="container">
         <div className="hero-content">
           <div className="profile-image-container">
-            <div className="profile-placeholder">CJ</div>
+            <img 
+              src="/images/profile.jpg" 
+              alt="Chamathka Jayodavi" 
+              className="profile-image"
+            />
           </div>
           
           <h1 className="hero-title">Chamathka Jayodavi</h1>

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 
 function Projects() {
+  const [activeSlide, setActiveSlide] = useState({});
+
   const projects = [
     {
       id: 1,
@@ -19,7 +21,7 @@ function Projects() {
       technologies: ['IoT', 'Arduino', 'Sensors', 'C++'],
       link: '#',
       github: '#',
-      image: '/projects/coffee-mug.jpg'
+      images: ['/images/s1.jpeg', '/images/s2.jpeg']
     },
     {
       id: 3,
@@ -28,9 +30,23 @@ function Projects() {
       technologies: ['Java', 'MySQL', 'JavaFX', 'JDBC'],
       link: '#',
       github: '#',
-      image: '/projects/farm-system.jpg'
+      images: ['/images/gre1.jpeg', '/images/gre2.jpeg', '/images/gre3.jpeg']
     }
   ];
+
+  const nextSlide = (projectId, totalImages) => {
+    setActiveSlide(prev => ({
+      ...prev,
+      [projectId]: ((prev[projectId] || 0) + 1) % totalImages
+    }));
+  };
+
+  const prevSlide = (projectId, totalImages) => {
+    setActiveSlide(prev => ({
+      ...prev,
+      [projectId]: ((prev[projectId] || 0) - 1 + totalImages) % totalImages
+    }));
+  };
 
   return (
     <section id="projects" className="projects">
@@ -43,9 +59,40 @@ function Projects() {
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
-              <div className="project-image-placeholder">
-                <span className="placeholder-text">Project Image</span>
-              </div>
+              {project.images ? (
+                <div className="project-carousel">
+                  <button 
+                    className="carousel-btn prev" 
+                    onClick={() => prevSlide(project.id, project.images.length)}
+                  >
+                    ‹
+                  </button>
+                  <img 
+                    src={project.images[activeSlide[project.id] || 0]} 
+                    alt={`${project.title} - Slide ${(activeSlide[project.id] || 0) + 1}`}
+                    className="project-image"
+                  />
+                  <button 
+                    className="carousel-btn next" 
+                    onClick={() => nextSlide(project.id, project.images.length)}
+                  >
+                    ›
+                  </button>
+                  <div className="carousel-dots">
+                    {project.images.map((_, index) => (
+                      <span 
+                        key={index} 
+                        className={`dot ${(activeSlide[project.id] || 0) === index ? 'active' : ''}`}
+                        onClick={() => setActiveSlide(prev => ({ ...prev, [project.id]: index }))}
+                      />
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="project-image-placeholder">
+                  <span className="placeholder-text">Project Image</span>
+                </div>
+              )}
               <h3 className="project-title">{project.title}</h3>
               <p className="project-description">{project.description}</p>
               
