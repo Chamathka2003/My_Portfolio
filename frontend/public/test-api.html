@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test API</title>
+</head>
+<body>
+    <h2>Testing API Response</h2>
+    <div id="result"></div>
+    
+    <script>
+        // Test the API call directly
+        fetch('/api/projects')
+            .then(response => {
+                console.log('Response status:', response.status);
+                return response.json();
+            })
+            .then(data => {
+                console.log('API Response:', data);
+                document.getElementById('result').innerHTML = 
+                    '<h3>Projects from API:</h3>' +
+                    '<pre>' + JSON.stringify(data, null, 2) + '</pre>' +
+                    '<p>Total projects: ' + (Array.isArray(data) ? data.length : 'Not an array') + '</p>';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('result').innerHTML = 
+                    '<p style="color: red;">Error: ' + error.message + '</p>';
+            });
+    </script>
+</body>
+</html>
