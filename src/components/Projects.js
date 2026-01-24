@@ -31,6 +31,15 @@ function Projects() {
       link: '#',
       github: '#',
       images: ['/images/gre1.jpeg', '/images/gre2.jpeg', '/images/gre3.jpeg']
+    },
+    {
+      id: 4,
+      title: '⚡ Smart Energy Monitoring Dashboard',
+      description: 'An innovative IoT-based energy monitoring system designed to track and visualize real-time electricity usage. This application displays key power metrics such as total energy consumption, voltage, current, active power, frequency, and power factor through an interactive dashboard. The system also provides smart alerts for high energy usage and device activity, helping users optimize power consumption and improve energy efficiency.',
+      technologies: ['Flutter', 'IoT', 'Energy Sensors', 'Firebase', 'Embedded Systems'],
+      link: '#',
+      github: '#',
+      images: ['/images/te2.jpeg', '/images/te3.jpeg', '/images/te4.jpeg', '/images/tem1.jpeg', '/images/t5.jpeg']
     }
   ];
 
