@@ -1,0 +1,74 @@
+import React from 'react';
+import './Projects.css';
+
+function Projects() {
+  const projects = [
+    {
+      id: 1,
+      title: '🌸 Blossom Flower Delivery Website',
+      description: 'Blossom is a full-stack flower delivery web application developed using Spring Boot and React. Features include online ordering, product catalog, shopping cart, and delivery management system.',
+      technologies: ['Spring Boot', 'React', 'MySQL', 'REST API'],
+      link: '#',
+      github: '#',
+      image: '/projects/blossom.jpg'
+    },
+    {
+      id: 2,
+      title: '☕ Smart Coffee Mug with Temperature Control',
+      description: 'An innovative IoT project showcased at TechWaves 2025, NIBM Galle Campus. A smart coffee mug that maintains optimal temperature using sensors and microcontroller technology.',
+      technologies: ['IoT', 'Arduino', 'Sensors', 'C++'],
+      link: '#',
+      github: '#',
+      image: '/projects/coffee-mug.jpg'
+    },
+    {
+      id: 3,
+      title: '🌾 Farm Product and Sales Management System',
+      description: 'A comprehensive Farm Product and Sales Management System developed as Year 1 Final Project. Streamlines farm operations, product tracking, inventory management, and sales analytics.',
+      technologies: ['Java', 'MySQL', 'JavaFX', 'JDBC'],
+      link: '#',
+      github: '#',
+      image: '/projects/farm-system.jpg'
+    }
+  ];
+
+  return (
+    <section id="projects" className="projects">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">My Projects</h2>
+          <p className="section-subtitle">Here are some of the projects I've worked on:</p>
+        </div>
+        
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <div key={project.id} className="project-card">
+              <div className="project-image-placeholder">
+                <span className="placeholder-text">Project Image</span>
+              </div>
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              
+              <div className="project-technologies">
+                {project.technologies.map((tech, index) => (
+                  <span key={index} className="tech-tag">{tech}</span>
+                ))}
+              </div>
+              
+              <div className="project-links">
+                <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
+                  View Project
+                </a>
+                <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Projects;

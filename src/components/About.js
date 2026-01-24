@@ -1,0 +1,89 @@
+import React from 'react';
+import './About.css';
+
+function About() {
+  return (
+    <section id="about" className="about">
+      <div className="container">
+        <div className="section-header">
+          <span className="icon">👋</span>
+          <h2 className="section-title">About Me</h2>
+        </div>
+        
+        <div className="about-content">
+          <div className="about-text">
+            <p>
+              Hello! I'm Chamathka Jayodavi, a passionate and results-driven Software Engineering student 
+              passionate about creating innovative web solutions. With expertise in both frontend and backend 
+              technologies, I bring ideas to life through clean, efficient, and scalable code.
+            </p>
+          </div>
+
+          <div className="education-section">
+            <div className="section-header">
+              <span className="icon">🎓</span>
+              <h2 className="section-title">Education & Certification</h2>
+            </div>
+
+            <div className="education-card">
+              <h3>Diploma in Software Engineering</h3>
+              <h4 className="institution">National Institute of Business Management (NIBM), Sri Lanka</h4>
+              
+              <div className="education-details">
+                <p className="status"><strong>Status:</strong> <span className="success">Successfully Completed</span></p>
+                <p><strong>Program:</strong> Comprehensive Diploma in Software Engineering</p>
+              </div>
+
+              <p className="description">
+                Successfully completed a comprehensive Diploma program in Software Engineering, gaining advanced skills 
+                in full-stack development, software architecture, database design, and modern web technologies. This 
+                program equipped me with industry-standard knowledge and practical experience to excel in software 
+                development and engineering roles.
+              </p>
+            </div>
+          </div>
+            
+          <div className="skills">
+            <h3>Technical Skills</h3>
+            <div className="skills-grid">
+              <div className="skill-item">
+                <span className="skill-icon">⚛️</span>
+                <span>React.js</span>
+              </div>
+              <div className="skill-item">
+                <span className="skill-icon">☕</span>
+                <span>Spring Boot</span>
+              </div>
+              <div className="skill-item">
+                <span className="skill-icon">🔥</span>
+                <span>Firebase</span>
+              </div>
+              <div className="skill-item">
+                <span className="skill-icon">💻</span>
+                <span>JavaScript</span>
+              </div>
+              <div className="skill-item">
+                <span className="skill-icon">🗄️</span>
+                <span>Database Design</span>
+              </div>
+              <div className="skill-item">
+                <span className="skill-icon">📱</span>
+                <span>IoT Development</span>
+              </div>
+              <div className="skill-item">
+                <span className="skill-icon">🎨</span>
+                <span>Full Stack Dev</span>
+              </div>
+              <div className="skill-item">
+                <span className="skill-icon">🚀</span>
+                <span>Web Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default About;
