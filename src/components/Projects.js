@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import './Projects.css';
+import ImageModal from './ImageModal';
 
 function Projects() {
   const [activeSlide, setActiveSlide] = useState({});
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState({ url: '', name: '' });
 
   const projects = [
     {
@@ -55,6 +58,16 @@ function Projects() {
       ...prev,
       [projectId]: ((prev[projectId] || 0) - 1 + totalImages) % totalImages
     }));
+  };
+
+  const openModal = (imageUrl, projectName) => {
+    setSelectedImage({ url: imageUrl, name: projectName });
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setSelectedImage({ url: '', name: '' });
   };
 
   return (
