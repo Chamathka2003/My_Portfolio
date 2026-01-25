@@ -12,7 +12,7 @@ function Projects() {
       technologies: ['Spring Boot', 'React', 'MySQL', 'REST API'],
       link: '#',
       github: '#',
-      image: '/projects/blossom.jpg'
+      images: ['/images/b1.png', '/images/b2.png', '/images/b3.png', '/images/b4.png']
     },
     {
       id: 2,
