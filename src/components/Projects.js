@@ -93,6 +93,8 @@ function Projects() {
                     src={project.images[activeSlide[project.id] || 0]} 
                     alt={`${project.title} - Slide ${(activeSlide[project.id] || 0) + 1}`}
                     className="project-image"
+                    onClick={() => openModal(project.images[activeSlide[project.id] || 0], project.title)}
+                    style={{ cursor: 'pointer' }}
                   />
                   <button 
                     className="carousel-btn next" 
@@ -136,6 +138,13 @@ function Projects() {
           ))}
         </div>
       </div>
+
+      <ImageModal 
+        isOpen={modalOpen}
+        onClose={closeModal}
+        imageUrl={selectedImage.url}
+        projectName={selectedImage.name}
+      />
     </section>
   );
 }
