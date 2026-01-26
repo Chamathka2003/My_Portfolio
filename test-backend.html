@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 4px solid #007bff;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 15px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Backend API Test Suite</h1>
+        <p>Use this page to test your backend API endpoints before integrating with the React frontend.</p>
+
+        <!-- Test Backend Connection -->
+        <div class="test-section">
+            <h2>Test 1: Check Backend Connection</h2>
+            <p>Tests if the backend server is reachable.</p>
+            <button onclick="testConnection()">Test Connection</button>
+            <div id="connectionResult" class="result" style="display:none;"></div>
+        </div>
+
+        <!-- Test Get Messages -->
+        <div class="test-section">
+            <h2>Test 2: Get Contact Messages</h2>
+            <p>Retrieves all contact messages from the database.</p>
+            <button onclick="getMessages()">Get All Messages</button>
+            <div id="messagesResult" class="result" style="display:none;"></div>
+        </div>
+
+        <!-- Test Send Message -->
+        <div class="test-section">
+            <h2>Test 3: Send Contact Message</h2>
+            <p>Submit a test message to the backend.</p>
+            <form onsubmit="sendMessage(event)">
+                <div>
+                    <label>Name:</label>
+                    <input type="text" id="name" value="Test User" required>
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" id="email" value="test@example.com" required>
+                </div>
+                <div>
+                    <label>Message:</label>
+                    <textarea id="message" rows="4" required>This is a test message from the API test page.</textarea>
+                </div>
+                <button type="submit">Send Test Message</button>
+            </form>
+            <div id="sendResult" class="result" style="display:none;"></div>
+        </div>
+
+        <!-- Test Get Projects -->
+        <div class="test-section">
+            <h2>Test 4: Get Projects</h2>
+            <p>Retrieves all projects from the database.</p>
+            <button onclick="getProjects()">Get All Projects</button>
+            <div id="projectsResult" class="result" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost/myportfilo/backend';
+
+        function showResult(elementId, message, isError = false) {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            element.innerHTML = `<span class="${isError ? 'error' : 'success'}">${isError ? '❌' : '✅'}</span>\n${message}`;
+        }
+
+        async function testConnection() {
+            try {
+                const response = await fetch(`${API_URL}/contact`);
+                const data = await response.json();
+                showResult('connectionResult', 
+                    `Connection successful!\nStatus: ${response.status}\nResponse: ${JSON.stringify(data, null, 2)}`
+                );
+            } catch (error) {
+                showResult('connectionResult', 
+                    `Connection failed!\nError: ${error.message}\n\nMake sure:\n1. XAMPP Apache is running\n2. Backend is at ${API_URL}\n3. Database is configured`, 
+                    true
+                );
+            }
+        }
+
+        async function getMessages() {
+            try {
+                const response = await fetch(`${API_URL}/contact`);
+                const data = await response.json();
+                showResult('messagesResult', 
+                    `Found ${data.length} message(s):\n${JSON.stringify(data, null, 2)}`
+                );
+            } catch (error) {
+                showResult('messagesResult', `Error: ${error.message}`, true);
+            }
+        }
+
+        async function sendMessage(event) {
+            event.preventDefault();
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            try {
+                const response = await fetch(`${API_URL}/contact`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+                const data = await response.json();
+                showResult('sendResult', 
+                    `Message sent successfully!\nResponse: ${JSON.stringify(data, null, 2)}\n\nCheck phpMyAdmin to see the message in contact_messages table.`
+                );
+            } catch (error) {
+                showResult('sendResult', `Error: ${error.message}`, true);
+            }
+        }
+
+        async function getProjects() {
+            try {
+                const response = await fetch(`${API_URL}/projects`);
+                const data = await response.json();
+                showResult('projectsResult', 
+                    `Found ${data.length} project(s):\n${JSON.stringify(data, null, 2)}`
+                );
+            } catch (error) {
+                showResult('projectsResult', `Error: ${error.message}`, true);
+            }
+        }
+    </script>
+</body>
+</html>

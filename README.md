@@ -1,69 +1,133 @@
 # Chamathka Jayodavi - Portfolio Website
 
-A modern, responsive portfolio website built with React, EmailJS, Firebase, and deployed on Netlify.
+A modern, full-stack portfolio website built with React frontend and PHP backend, featuring a contact form, project showcase, and database integration.
 
-## Technologies Used
+## 🚀 Technologies Used
 
+### Frontend
 - **React** - Frontend framework
-- **EmailJS** - Contact form email service
-- **Firebase** - Backend services and analytics
-- **Netlify** - Hosting and deployment
+- **CSS3** - Styling and animations
+- **Fetch API** - Backend communication
 
-## Getting Started
+### Backend
+- **PHP** - Server-side logic
+- **MySQL** - Database
+- **RESTful API** - Clean API architecture
 
-### Prerequisites
+### Deployment
+- **Netlify** - Frontend hosting
+- **Apache/XAMPP** - Local backend server
 
-- Node.js (v14 or higher)
-- npm or yarn
+## 📋 Quick Start
 
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
+### 1. Install Dependencies
 ```bash
 npm install
 ```
 
-3. Create a `.env` file in the root directory with your credentials:
+### 2. Setup Backend (Required for Contact Form)
+See [QUICKSTART_BACKEND.md](QUICKSTART_BACKEND.md) for detailed instructions.
+
+**Quick steps:**
+1. Install XAMPP
+2. Start Apache & MySQL
+3. Import `database/schema.sql` in phpMyAdmin
+4. Place backend folder in `htdocs/myportfilo/backend`
+
+### 3. Configure Environment
+Update `.env` with your backend URL (default is already set):
+```env
+REACT_APP_API_URL=http://localhost/myportfilo/backend
 ```
-REACT_APP_EMAILJS_SERVICE_ID=your_service_id
-REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
-REACT_APP_EMAILJS_USER_ID=your_user_id
 
-REACT_APP_FIREBASE_API_KEY=your_api_key
-REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
-REACT_APP_FIREBASE_PROJECT_ID=your_project_id
-REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-REACT_APP_FIREBASE_APP_ID=your_app_id
+### 4. Test Backend (Optional)
+```bash
+npm run test-backend
 ```
 
-### Running Locally
-
+### 5. Start Development Server
 ```bash
 npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Building for Production
+## 📁 Project Structure
 
-```bash
-npm run build
+```
+myportfilo/
+├── backend/                 # PHP Backend
+│   ├── config/             # Database configuration
+│   ├── controllers/        # API controllers
+│   ├── models/            # Data models
+│   └── index.php          # API entry point
+├── database/               # SQL scripts
+├── src/                    # React frontend
+│   ├── api/               # API services
+│   └── components/        # React components
+├── public/                # Static files
+└── .env                   # Environment variables
 ```
 
-## Deployment
+## 🎯 Features
 
+- ✅ Responsive design for all devices
+- ✅ Contact form with backend database storage
+- ✅ Project showcase with image display
+- ✅ Modern UI with smooth animations
+- ✅ RESTful API architecture
+- ✅ MySQL database integration
+- ✅ SEO optimized
+
+## 📧 Contact Information
+
+- **Email**: chamathka696@gmail.com
+- **Location**: Sri Lanka
+- **LinkedIn**: linkedin.com/in/chamathka
+
+## 🛠️ Development
+
+### Available Scripts
+
+- `npm start` - Run development server
+- `npm run build` - Build for production
+- `npm test` - Run tests
+- `npm run test-backend` - Test backend API
+
+### Backend API Endpoints
+
+- `POST /contact` - Submit contact message
+- `GET /contact` - Get all messages
+- `GET /projects` - Get all projects
+- `POST /projects` - Create new project
+
+## 📚 Documentation
+
+- [Backend Setup Guide](BACKEND_SETUP.md) - Detailed backend configuration
+- [Quick Start Backend](QUICKSTART_BACKEND.md) - Fast setup guide
+- [Database Schema](database/schema.sql) - Database structure
+
+## 🚀 Deployment
+
+### Frontend (Netlify)
 The site is configured for automatic deployment on Netlify. Push to your main branch to trigger a deploy.
 
-## Features
+### Backend
+For production, you'll need:
+1. PHP hosting with MySQL
+2. Update `.env` with production API URL
+3. Configure CORS in `backend/index.php`
 
-- Responsive design
-- Contact form with EmailJS integration
-- Firebase analytics
-- Modern UI with smooth animations
-- SEO optimized
+## 🐛 Troubleshooting
 
-## License
+If the contact form isn't working:
+1. Check XAMPP Apache & MySQL are running
+2. Verify database exists in phpMyAdmin
+3. Run `npm run test-backend` to diagnose
+4. Check browser console for errors (F12)
+
+See [QUICKSTART_BACKEND.md](QUICKSTART_BACKEND.md) for detailed troubleshooting.
+
+## 📝 License
 
 MIT
