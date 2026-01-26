@@ -31,7 +31,11 @@ function Contact() {
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Error:', error);
-      setStatus('Failed to send message. Please try again or email me directly.');
+      if (error.message && error.message.includes('EmailJS not configured')) {
+        setStatus('⚠️ Email service not configured yet. Please email me directly at chamathka696@gmail.com');
+      } else {
+        setStatus('Failed to send message. Please try again or email me directly at chamathka696@gmail.com');
+      }
     } finally {
       setLoading(false);
     }
