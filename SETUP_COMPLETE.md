@@ -5,7 +5,9 @@
 ### 1. Frontend Updates ✅
 - ✅ Created new API service at `src/api/contactService.js`
 - ✅ Updated `Contact.js` to use the PHP backend instead of EmailJS
-- ✅ Configured environment variables in `.env`
+- ✅ Configured environment variables in `.env`REACT_APP_EMAILJS_SERVICE_ID=your_service_id_here
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id_here
+REACT_APP_EMAILJS_USER_ID=your_public_key_here
 - ✅ Updated email to `chamathka696@gmail.com`
 
 ### 2. Backend Configuration ✅
