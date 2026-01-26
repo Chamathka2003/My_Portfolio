@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { sendEmail } from '../emailService';
+import { sendContactMessage } from '../api/contactService';
 import './Contact.css';
 
 function Contact() {
@@ -24,8 +24,8 @@ function Contact() {
     setStatus('');
 
     try {
-      // Send email via EmailJS
-      await sendEmail(formData);
+      // Send message via backend API
+      const response = await sendContactMessage(formData);
 
       setStatus('Message sent successfully! I\'ll get back to you soon.');
       setFormData({ name: '', email: '', message: '' });
