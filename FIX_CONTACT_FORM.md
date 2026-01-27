@@ -23,7 +23,7 @@ Your EmailJS credentials are not configured. The `.env` file still has placehold
 6. Allow permissions
 7. **COPY THE SERVICE ID** (looks like: `service_abc1234`)
 
-#### Step 3: Create Email Template
+#### Step 3: Create Email Templateanother achivment
 1. Click **"Email Templates"** (left sidebar)
 2. Click **"Create New Template"**
 3. Fill in:

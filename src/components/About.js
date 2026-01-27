@@ -26,6 +26,24 @@ function About() {
             </div>
 
             <div className="education-card">
+              <h3>Certificate in Software Engineering</h3>
+              <h4 className="institution">National Institute of Business Management (NIBM), Sri Lanka</h4>
+              
+              <div className="education-details">
+                <p className="status"><strong>Status:</strong> <span className="success">Successfully Completed</span></p>
+                <p><strong>Duration:</strong> November 2023 - March 2024</p>
+                <p><strong>Serial No:</strong> 123675</p>
+              </div>
+
+              <p className="description">
+                Successfully completed the Certificate in Software Engineering program from NIBM, spanning from June 2023 
+                to December 2023. This rigorous program equipped me with cutting-edge skills and knowledge to thrive in 
+                the dynamic field of software development. Ready to leverage these skills to build innovative solutions 
+                and contribute to the tech industry!
+              </p>
+            </div>
+
+            <div className="education-card">
               <h3>Diploma in Software Engineering</h3>
               <h4 className="institution">National Institute of Business Management (NIBM), Sri Lanka</h4>
               
