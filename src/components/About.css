@@ -16,6 +16,148 @@
   text-align: center;
 }
 
+.tech-stack-banner {
+  margin: 50px 0;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(26, 35, 46, 0.9) 0%, rgba(26, 35, 46, 0.7) 100%);
+  border-radius: 20px;
+  border: 2px solid rgba(77, 166, 255, 0.3);
+}
+
+.tech-stack-banner h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.tech-category-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(77, 166, 255, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.tech-category-box:hover {
+  border-color: rgba(77, 166, 255, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(77, 166, 255, 0.3);
+}
+
+.tech-category-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.3rem;
+  color: #4da6ff;
+  margin-bottom: 20px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.tech-icon-title {
+  font-size: 1.5rem;
+}
+
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tech-icon:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(77, 166, 255, 0.4);
+}
+
+.tech-icon span {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Technology specific colors */
+.html-icon { background: rgba(227, 76, 38, 0.2); border-color: #e34c26; }
+.html-icon:hover { background: rgba(227, 76, 38, 0.3); box-shadow: 0 8px 25px rgba(227, 76, 38, 0.5); }
+
+.css-icon { background: rgba(21, 114, 182, 0.2); border-color: #1572b6; }
+.css-icon:hover { background: rgba(21, 114, 182, 0.3); box-shadow: 0 8px 25px rgba(21, 114, 182, 0.5); }
+
+.js-icon { background: rgba(240, 219, 79, 0.2); border-color: #f0db4f; color: #000; }
+.js-icon:hover { background: rgba(240, 219, 79, 0.3); box-shadow: 0 8px 25px rgba(240, 219, 79, 0.5); }
+
+.react-icon { background: rgba(97, 218, 251, 0.2); border-color: #61dafb; }
+.react-icon:hover { background: rgba(97, 218, 251, 0.3); box-shadow: 0 8px 25px rgba(97, 218, 251, 0.5); }
+
+.tailwind-icon { background: rgba(56, 189, 248, 0.2); border-color: #38bdf8; }
+.tailwind-icon:hover { background: rgba(56, 189, 248, 0.3); box-shadow: 0 8px 25px rgba(56, 189, 248, 0.5); }
+
+.bootstrap-icon { background: rgba(123, 31, 162, 0.2); border-color: #7b1fa2; }
+.bootstrap-icon:hover { background: rgba(123, 31, 162, 0.3); box-shadow: 0 8px 25px rgba(123, 31, 162, 0.5); }
+
+.node-icon { background: rgba(104, 160, 99, 0.2); border-color: #68a063; }
+.node-icon:hover { background: rgba(104, 160, 99, 0.3); box-shadow: 0 8px 25px rgba(104, 160, 99, 0.5); }
+
+.python-icon { background: rgba(55, 118, 171, 0.2); border-color: #3776ab; }
+.python-icon:hover { background: rgba(55, 118, 171, 0.3); box-shadow: 0 8px 25px rgba(55, 118, 171, 0.5); }
+
+.php-icon { background: rgba(119, 123, 180, 0.2); border-color: #777bb4; }
+.php-icon:hover { background: rgba(119, 123, 180, 0.3); box-shadow: 0 8px 25px rgba(119, 123, 180, 0.5); }
+
+.java-icon { background: rgba(237, 51, 28, 0.2); border-color: #ed331c; }
+.java-icon:hover { background: rgba(237, 51, 28, 0.3); box-shadow: 0 8px 25px rgba(237, 51, 28, 0.5); }
+
+.mysql-icon { background: rgba(0, 117, 143, 0.2); border-color: #00758f; }
+.mysql-icon:hover { background: rgba(0, 117, 143, 0.3); box-shadow: 0 8px 25px rgba(0, 117, 143, 0.5); }
+
+.sqlite-icon { background: rgba(0, 125, 156, 0.2); border-color: #007d9c; }
+.sqlite-icon:hover { background: rgba(0, 125, 156, 0.3); box-shadow: 0 8px 25px rgba(0, 125, 156, 0.5); }
+
+.oracle-icon { background: rgba(240, 0, 0, 0.2); border-color: #f00000; }
+.oracle-icon:hover { background: rgba(240, 0, 0, 0.3); box-shadow: 0 8px 25px rgba(240, 0, 0, 0.5); }
+
+.postgres-icon { background: rgba(51, 103, 145, 0.2); border-color: #336791; }
+.postgres-icon:hover { background: rgba(51, 103, 145, 0.3); box-shadow: 0 8px 25px rgba(51, 103, 145, 0.5); }
+
+.git-icon { background: rgba(240, 80, 50, 0.2); border-color: #f05032; }
+.git-icon:hover { background: rgba(240, 80, 50, 0.3); box-shadow: 0 8px 25px rgba(240, 80, 50, 0.5); }
+
+.c-icon { background: rgba(85, 85, 165, 0.2); border-color: #5555a5; }
+.c-icon:hover { background: rgba(85, 85, 165, 0.3); box-shadow: 0 8px 25px rgba(85, 85, 165, 0.5); }
+
+.csharp-icon { background: rgba(104, 33, 122, 0.2); border-color: #68217a; }
+.csharp-icon:hover { background: rgba(104, 33, 122, 0.3); box-shadow: 0 8px 25px rgba(104, 33, 122, 0.5); }
+
+.kotlin-icon { background: rgba(127, 82, 255, 0.2); border-color: #7f52ff; }
+.kotlin-icon:hover { background: rgba(127, 82, 255, 0.3); box-shadow: 0 8px 25px rgba(127, 82, 255, 0.5); }
+
+.android-icon { background: rgba(61, 220, 132, 0.2); border-color: #3ddc84; }
+.android-icon:hover { background: rgba(61, 220, 132, 0.3); box-shadow: 0 8px 25px rgba(61, 220, 132, 0.5); }
+
 .education-section {
   margin-top: 60px;
 }

@@ -44,7 +44,7 @@ function Certificates() {
       title: 'Sustainability Foundations: Core Concepts',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
-      image: '/images/certificates/sustainability-foundations.jpg',
+      image: '/images/certificates/sustanability.jpeg',
       skills: ['Environmental Sustainability']
     }
   ];
