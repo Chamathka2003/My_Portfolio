@@ -1,8 +1,12 @@
 import React from 'react';
 import './ImageModal.css';
 
-function ImageModal({ isOpen, onClose, imageUrl, projectName }) {
-  if (!isOpen) return null;
+function ImageModal({ isOpen, onClose, imageUrl, projectName, imageSrc }) {
+  // Support both old (isOpen/imageUrl/projectName) and new (imageSrc) props
+  const shouldShow = isOpen || imageSrc;
+  const imageToShow = imageSrc || imageUrl;
+  
+  if (!shouldShow) return null;
 
   return (
     <div className="image-modal-overlay" onClick={onClose}>
@@ -12,8 +16,8 @@ function ImageModal({ isOpen, onClose, imageUrl, projectName }) {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-        <img src={imageUrl} alt={projectName} className="modal-image" />
-        <p className="modal-caption">{projectName}</p>
+        <img src={imageToShow} alt={projectName || "Certificate"} className="modal-image" />
+        {projectName && <p className="modal-caption">{projectName}</p>}
       </div>
     </div>
   );

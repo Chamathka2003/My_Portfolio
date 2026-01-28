@@ -6,24 +6,7 @@ function Certificates() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const certificates = [
-    {
-      id: 1,
-      title: 'Diploma in Software Engineering',
-      issuer: 'NIBM - The City University',
-      date: '2024 - 2026',
-      image: '/images/certificates/diploma-software-engineering.jpg',
-      description: 'Comprehensive diploma program covering full-stack development, database management, and software engineering principles',
-      skills: ['Full Stack Development', 'Java', 'React', 'MySQL', 'Software Engineering']
-    },
-    {
-      id: 2,
-      title: 'Certificate in Software Engineering',
-      issuer: 'NIBM - The City University',
-      date: '2023 - 2024',
-      image: '/images/certificates/certificate-software-engineering.jpg',
-      description: 'Foundation certificate program in software development and programming fundamentals',
-      skills: ['Programming Fundamentals', 'Web Development', 'Database Design']
-    },
+    
     {
       id: 3,
       title: 'TechWaves 2025 - Tech Exhibitor',
@@ -37,7 +20,7 @@ function Certificates() {
       title: 'Generative AI for Business Leaders',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
-      image: '/images/certificates/generative-ai-business.jpg',
+      image: '/images/certificates/genareteai.jpeg',
       skills: ['Artificial Intelligence for Business', 'Generative AI for Management', 'Generative AI']
     },
     {
@@ -45,7 +28,7 @@ function Certificates() {
       title: 'Microsoft Security Essentials',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
-      image: '/images/certificates/microsoft-security.jpg',
+      image: '/images/certificates/microsftessential.jpeg',
       skills: ['Microsoft Security', 'Governance, Risk Management, and Compliance (GRC)', 'Cloud Security']
     },
     {
@@ -53,7 +36,7 @@ function Certificates() {
       title: 'Microsoft Azure AI Essentials',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
-      image: '/images/certificates/azure-ai-essentials.jpg',
+      image: '/images/certificates/amchinglearnin.jpeg',
       skills: ['Machine Learning', 'Microsoft Azure', 'Azure AI Foundry']
     },
     {
