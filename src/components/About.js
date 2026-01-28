@@ -63,38 +63,116 @@ function About() {
             
           <div className="skills">
             <h3>Technical Skills</h3>
-            <div className="skills-grid">
-              <div className="skill-item">
-                <span className="skill-icon">⚛️</span>
-                <span>React.js</span>
+            
+            <div className="skills-category">
+              <h4 className="category-title">
+                <span className="category-icon">🎨</span>
+                Frontend Development
+              </h4>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon">⚛️</span>
+                  <span>React.js</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">💻</span>
+                  <span>JavaScript</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🎨</span>
+                  <span>HTML/CSS</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">📱</span>
+                  <span>Responsive Design</span>
+                </div>
               </div>
-              <div className="skill-item">
-                <span className="skill-icon">☕</span>
-                <span>Spring Boot</span>
+            </div>
+
+            <div className="skills-category">
+              <h4 className="category-title">
+                <span className="category-icon">⚙️</span>
+                Backend Development
+              </h4>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon">☕</span>
+                  <span>Java</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🍃</span>
+                  <span>Spring Boot</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🐘</span>
+                  <span>PHP</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🗄️</span>
+                  <span>MySQL</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🔥</span>
+                  <span>Firebase</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🔌</span>
+                  <span>REST APIs</span>
+                </div>
               </div>
-              <div className="skill-item">
-                <span className="skill-icon">🔥</span>
-                <span>Firebase</span>
+            </div>
+
+            <div className="skills-category">
+              <h4 className="category-title">
+                <span className="category-icon">💡</span>
+                Programming Languages
+              </h4>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon">☕</span>
+                  <span>Java</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">💻</span>
+                  <span>JavaScript</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🔷</span>
+                  <span>C Programming</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🐘</span>
+                  <span>PHP</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">📊</span>
+                  <span>SQL</span>
+                </div>
               </div>
-              <div className="skill-item">
-                <span className="skill-icon">💻</span>
-                <span>JavaScript</span>
-              </div>
-              <div className="skill-item">
-                <span className="skill-icon">🗄️</span>
-                <span>Database Design</span>
-              </div>
-              <div className="skill-item">
-                <span className="skill-icon">📱</span>
-                <span>IoT Development</span>
-              </div>
-              <div className="skill-item">
-                <span className="skill-icon">🎨</span>
-                <span>Full Stack Dev</span>
-              </div>
-              <div className="skill-item">
-                <span className="skill-icon">🚀</span>
-                <span>Web Technologies</span>
+            </div>
+
+            <div className="skills-category">
+              <h4 className="category-title">
+                <span className="category-icon">🚀</span>
+                Other Technologies
+              </h4>
+              <div className="skills-grid">
+                <div className="skill-item">
+                  <span className="skill-icon">🌐</span>
+                  <span>Git & GitHub</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">📱</span>
+                  <span>IoT Development</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🗄️</span>
+                  <span>Database Design</span>
+                </div>
+                <div className="skill-item">
+                  <span className="skill-icon">🎯</span>
+                  <span>Software Engineering</span>
+                </div>
               </div>
             </div>
           </div>
