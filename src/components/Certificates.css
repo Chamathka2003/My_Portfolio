@@ -1,6 +1,6 @@
 .certificates {
   padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #001a3d 0%, #002b5c 25%, #003d7a 50%, #004d99 75%, #0066cc 100%);
   color: white;
 }
 
@@ -81,7 +81,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 102, 204, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +134,7 @@
 }
 
 .skill-tag {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
   color: white;
   padding: 5px 12px;
   border-radius: 20px;

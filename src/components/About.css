@@ -19,9 +19,9 @@
 .tech-stack-banner {
   margin: 50px 0;
   padding: 40px;
-  background: linear-gradient(135deg, rgba(26, 35, 46, 0.9) 0%, rgba(26, 35, 46, 0.7) 100%);
+  background: linear-gradient(135deg, rgba(0, 26, 61, 0.9) 0%, rgba(0, 43, 92, 0.8) 100%);
   border-radius: 20px;
-  border: 2px solid rgba(77, 166, 255, 0.3);
+  border: 2px solid rgba(0, 102, 204, 0.4);
 }
 
 .tech-stack-banner h3 {
@@ -38,17 +38,17 @@
 }
 
 .tech-category-box {
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(77, 166, 255, 0.2);
+  background: rgba(0, 102, 204, 0.1);
+  border: 2px solid rgba(0, 102, 204, 0.3);
   border-radius: 15px;
   padding: 25px;
   transition: all 0.3s ease;
 }
 
 .tech-category-box:hover {
-  border-color: rgba(77, 166, 255, 0.5);
+  border-color: rgba(0, 102, 204, 0.6);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(77, 166, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 102, 204, 0.4);
 }
 
 .tech-category-title {
@@ -56,7 +56,7 @@
   align-items: center;
   gap: 10px;
   font-size: 1.3rem;
-  color: #4da6ff;
+  color: #0066cc;
   margin-bottom: 20px;
   font-weight: 600;
   justify-content: center;
