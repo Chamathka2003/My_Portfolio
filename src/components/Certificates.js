@@ -29,7 +29,7 @@ function Certificates() {
       title: 'TechWaves 2025 - Tech Exhibitor',
       issuer: 'NIBM - The City University',
       date: 'August 2025',
-      image: '/images/certificates/techwaves-2025.jpg',
+      image: '/images/certificates/tecvave.jpeg',
       description: 'Certificate of Participation as Tech Exhibitor at TechWaves 2025'
     },
     {

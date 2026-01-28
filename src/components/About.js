@@ -18,48 +18,6 @@ function About() {
               technologies, I bring ideas to life through clean, efficient, and scalable code.
             </p>
           </div>
-
-          <div className="education-section">
-            <div className="section-header">
-              <span className="icon">🎓</span>
-              <h2 className="section-title">Education & Certification</h2>
-            </div>
-
-            <div className="education-card">
-              <h3>Certificate in Software Engineering</h3>
-              <h4 className="institution">National Institute of Business Management (NIBM), Sri Lanka</h4>
-              
-              <div className="education-details">
-                <p className="status"><strong>Status:</strong> <span className="success">Successfully Completed</span></p>
-                <p><strong>Duration:</strong> November 2023 - March 2024</p>
-                <p><strong>Serial No:</strong> 123675</p>
-              </div>
-
-              <p className="description">
-                Successfully completed the Certificate in Software Engineering program from NIBM, spanning from June 2023 
-                to December 2023. This rigorous program equipped me with cutting-edge skills and knowledge to thrive in 
-                the dynamic field of software development. Ready to leverage these skills to build innovative solutions 
-                and contribute to the tech industry!
-              </p>
-            </div>
-
-            <div className="education-card">
-              <h3>Diploma in Software Engineering</h3>
-              <h4 className="institution">National Institute of Business Management (NIBM), Sri Lanka</h4>
-              
-              <div className="education-details">
-                <p className="status"><strong>Status:</strong> <span className="success">Successfully Completed</span></p>
-                <p><strong>Program:</strong> Comprehensive Diploma in Software Engineering</p>
-              </div>
-
-              <p className="description">
-                Successfully completed a comprehensive Diploma program in Software Engineering, gaining advanced skills 
-                in full-stack development, software architecture, database design, and modern web technologies. This 
-                program equipped me with industry-standard knowledge and practical experience to excel in software 
-                development and engineering roles.
-              </p>
-            </div>
-          </div>
             
           <div className="skills">
             <h3>Technical Skills</h3>

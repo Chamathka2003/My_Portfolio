@@ -6,7 +6,7 @@ Save your certificate images with these names:
 
 1. `diploma-software-engineering.jpg` - Diploma in Software Engineering (NIBM)
 2. `certificate-software-engineering.jpg` - Certificate in Software Engineering (NIBM)
-3. `techwaves-2025.jpg` - NIBM TechWaves 2025 certificate
+3. `tecvave.jpeg` - NIBM TechWaves 2025 certificate ✅ (Added)
 4. `generative-ai-business.jpg` - Generative AI for Business Leaders
 5. `microsoft-security.jpg` - Microsoft Security Essentials
 6. `azure-ai-essentials.jpg` - Azure AI Essentials
