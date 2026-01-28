@@ -4,11 +4,13 @@
 
 Save your certificate images with these names:
 
-1. `techwaves-2025.jpg` - NIBM TechWaves 2025 certificate
-2. `generative-ai-business.jpg` - Generative AI for Business Leaders
-3. `microsoft-security.jpg` - Microsoft Security Essentials
-4. `azure-ai-essentials.jpg` - Azure AI Essentials
-5. `sustainability-foundations.jpg` - Sustainability Foundations
+1. `diploma-software-engineering.jpg` - Diploma in Software Engineering (NIBM)
+2. `certificate-software-engineering.jpg` - Certificate in Software Engineering (NIBM)
+3. `techwaves-2025.jpg` - NIBM TechWaves 2025 certificate
+4. `generative-ai-business.jpg` - Generative AI for Business Leaders
+5. `microsoft-security.jpg` - Microsoft Security Essentials
+6. `azure-ai-essentials.jpg` - Azure AI Essentials
+7. `sustainability-foundations.jpg` - Sustainability Foundations
 
 ## How to Add Images:
 

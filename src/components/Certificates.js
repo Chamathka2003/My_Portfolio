@@ -8,6 +8,24 @@ function Certificates() {
   const certificates = [
     {
       id: 1,
+      title: 'Diploma in Software Engineering',
+      issuer: 'NIBM - The City University',
+      date: '2024 - 2026',
+      image: '/images/certificates/diploma-software-engineering.jpg',
+      description: 'Comprehensive diploma program covering full-stack development, database management, and software engineering principles',
+      skills: ['Full Stack Development', 'Java', 'React', 'MySQL', 'Software Engineering']
+    },
+    {
+      id: 2,
+      title: 'Certificate in Software Engineering',
+      issuer: 'NIBM - The City University',
+      date: '2023 - 2024',
+      image: '/images/certificates/certificate-software-engineering.jpg',
+      description: 'Foundation certificate program in software development and programming fundamentals',
+      skills: ['Programming Fundamentals', 'Web Development', 'Database Design']
+    },
+    {
+      id: 3,
       title: 'TechWaves 2025 - Tech Exhibitor',
       issuer: 'NIBM - The City University',
       date: 'August 2025',
@@ -15,7 +33,7 @@ function Certificates() {
       description: 'Certificate of Participation as Tech Exhibitor at TechWaves 2025'
     },
     {
-      id: 2,
+      id: 4,
       title: 'Generative AI for Business Leaders',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
@@ -23,7 +41,7 @@ function Certificates() {
       skills: ['Artificial Intelligence for Business', 'Generative AI for Management', 'Generative AI']
     },
     {
-      id: 3,
+      id: 5,
       title: 'Microsoft Security Essentials',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
@@ -31,7 +49,7 @@ function Certificates() {
       skills: ['Microsoft Security', 'Governance, Risk Management, and Compliance (GRC)', 'Cloud Security']
     },
     {
-      id: 4,
+      id: 6,
       title: 'Microsoft Azure AI Essentials',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
@@ -39,7 +57,7 @@ function Certificates() {
       skills: ['Machine Learning', 'Microsoft Azure', 'Azure AI Foundry']
     },
     {
-      id: 5,
+      id: 7,
       title: 'Sustainability Foundations: Core Concepts',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
