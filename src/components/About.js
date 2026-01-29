@@ -13,9 +13,7 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hello! I'm Chamathka Jayodavi, a passionate and results-driven Software Engineering student 
-              passionate about creating innovative web solutions. With expertise in both frontend and backend 
-              technologies, I bring ideas to life through clean, efficient, and scalable code.
+              Hello! I’m Chamathka Jayodavi, a passionate and results-driven Software Engineering student with a strong interest in creating innovative and user-centered web solutions. With expertise in both frontend and backend technologies, I enjoy bringing ideas to life through clean, efficient, and scalable code. I have hands-on experience working with modern development tools and frameworks, and I am constantly learning to stay updated with emerging technologies. I am motivated by problem-solving, collaboration, and the opportunity to build impactful digital solutions that make a real difference.
             </p>
           </div>
 
