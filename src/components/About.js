@@ -17,6 +17,29 @@ function About() {
             </p>
           </div>
 
+          {/* Certificate Section */}
+          <div className="certificate-section" style={{ margin: '2rem 0', textAlign: 'center' }}>
+            <h3 style={{ marginBottom: '1rem' }}>Certification</h3>
+            <div style={{ display: 'inline-block', border: '1px solid #ddd', borderRadius: '8px', padding: '1rem', background: '#fafbfc', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
+              <img
+                src={require('../../public/images/certificates/ibm-ml-python-certificate.png')}
+                alt="IBM Machine Learning with Python Certificate"
+                style={{ maxWidth: '400px', width: '100%', borderRadius: '4px', marginBottom: '0.5rem' }}
+              />
+              <div style={{ fontSize: '1rem', fontWeight: 500, marginTop: '0.5rem' }}>
+                <span>IBM Machine Learning with Python</span>
+              </div>
+              <div style={{ fontSize: '0.95rem', color: '#555' }}>
+                <span>Issued by IBM SkillsBuild &mdash; January 30, 2026</span>
+              </div>
+              <div style={{ fontSize: '0.9rem', marginTop: '0.5rem' }}>
+                <a href="https://courses.yl-ptech.skillsnetwork.site/certificates/36efd65102c24d8eb8bfd86761b14f7c2" target="_blank" rel="noopener noreferrer" style={{ color: '#0072c3', textDecoration: 'underline' }}>
+                  Verify Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="tech-stack-banner">
             <h3>Languages & Tools</h3>
             
