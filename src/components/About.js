@@ -20,7 +20,8 @@ function About() {
           {/* Certificate Section */}
           <div className="certificate-section" style={{ margin: '2rem 0', textAlign: 'center' }}>
             <h3 style={{ marginBottom: '1rem' }}>Certification</h3>
-            <div style={{ display: 'inline-block', border: '1px solid #ddd', borderRadius: '8px', padding: '1rem', background: '#fafbfc', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
+            {/* IBM Certificate */}
+            <div style={{ display: 'inline-block', border: '1px solid #ddd', borderRadius: '8px', padding: '1rem', background: '#fafbfc', boxShadow: '0 2px 8px rgba(0,0,0,0.04)', marginBottom: '2rem' }}>
               <img
                 src={require('../../public/images/certificates/ibm-ml-python-certificate.png')}
                 alt="IBM Machine Learning with Python Certificate"
@@ -37,6 +38,22 @@ function About() {
                   Verify Certificate
                 </a>
               </div>
+            </div>
+
+            {/* CES1 Certificate */}
+            <div style={{ display: 'inline-block', border: '1px solid #ddd', borderRadius: '8px', padding: '1rem', background: '#fafbfc', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
+              <img
+                src={require('../../public/images/certificates/ces1.png')}
+                alt="Certificate CES1"
+                style={{ maxWidth: '400px', width: '100%', borderRadius: '4px', marginBottom: '0.5rem' }}
+              />
+              <div style={{ fontSize: '1rem', fontWeight: 500, marginTop: '0.5rem' }}>
+                <span>Certificate Title</span>
+              </div>
+              <div style={{ fontSize: '0.95rem', color: '#555' }}>
+                <span>Certificate Description or Issuer</span>
+              </div>
+              {/* Add a link or more info if available */}
             </div>
           </div>
 
