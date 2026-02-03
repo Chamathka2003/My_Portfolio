@@ -46,10 +46,10 @@ function Certificates() {
       date: 'May 2025',
       image: '/images/certificates/sustanability.jpeg',
       skills: ['Environmental Sustainability']
-    }
+    },
     {
       id: 8,
-      title: 'Maching Learning with Python',
+      title: 'Machine Learning with Python',
       issuer: 'IBM',
       date: 'January 30, 2026',
       image: '/images/certificates/ibm-ml-python-certificate.png',
