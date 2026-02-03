@@ -23,7 +23,7 @@ function About() {
             {/* IBM Certificate */}
             <div style={{ display: 'inline-block', border: '1px solid #ddd', borderRadius: '8px', padding: '1rem', background: '#fafbfc', boxShadow: '0 2px 8px rgba(0,0,0,0.04)', marginBottom: '2rem' }}>
               <img
-                src={require('../../public/images/certificates/ibm-ml-python-certificate.png')}
+                src={process.env.PUBLIC_URL + '/images/certificates/ibm-ml-python-certificate.png'}
                 alt="IBM Machine Learning with Python Certificate"
                 style={{ maxWidth: '400px', width: '100%', borderRadius: '4px', marginBottom: '0.5rem' }}
               />
@@ -43,7 +43,7 @@ function About() {
             {/* CES1 Certificate */}
             <div style={{ display: 'inline-block', border: '1px solid #ddd', borderRadius: '8px', padding: '1rem', background: '#fafbfc', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
               <img
-                src={require('../../public/images/certificates/ces1.png')}
+                src={process.env.PUBLIC_URL + '/images/certificates/ces1.png'}
                 alt="Certificate CES1"
                 style={{ maxWidth: '400px', width: '100%', borderRadius: '4px', marginBottom: '0.5rem' }}
               />
