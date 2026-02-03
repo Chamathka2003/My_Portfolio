@@ -52,7 +52,7 @@ function Certificates() {
       title: 'Machine Learning with Python',
       issuer: 'IBM',
       date: 'January 30, 2026',
-      image: '/images/certificates/ibm-ml-python-certificate.png',
+      image: '/images/certificates/ces1.png',
       skills: ['Machine Learning', 'Python']
     }
   ];
