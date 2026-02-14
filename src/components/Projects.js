@@ -43,6 +43,15 @@ function Projects() {
       link: '#',
       github: '#',
       images: ['/images/te2.jpeg', '/images/te3.jpeg', '/images/te4.jpeg', '/images/tem1.jpeg', '/images/t5.jpeg']
+    },
+    {
+      id: 5,
+      title: '🎮 Word Chain Puzzle Game',
+      description: 'An interactive word puzzle game developed using vanilla JavaScript with a custom Linked List for word management. Features include word validation, scoring system, undo/redo functionality, riddles, and multiple difficulty levels. Designed with a modular architecture separating game logic, UI, and utilities for maintainability and scalability.',
+      technologies: ['JavaScript', 'Linked List', 'DOM Manipulation', 'Game Logic', 'Modular Architecture'],
+      link: '#',
+      github: '#',
+      images: ['/images/w1.jpeg', '/images/w2.jpeg']
     }
   ];
 
@@ -127,9 +136,13 @@ function Projects() {
               </div>
               
               <div className="project-links">
-                <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
+                <button 
+                  onClick={() => openModal(project.images[activeSlide[project.id] || 0], project.title)} 
+                  className="project-link"
+                  style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: 'inherit', fontFamily: 'inherit' }}
+                >
                   View Project
-                </a>
+                </button>
                 <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">
                   GitHub
                 </a>
