@@ -3,8 +3,8 @@ import './About.css';
 
 function About() {
   return (
-    <section id="about" className="about">
-      <div className="container">
+    <section id="about" className="about" style={{ paddingTop: '2rem' }}>
+      <div className="container" style={{ marginTop: '0' }}>
         <div className="section-header">
           <span className="icon">👋</span>
           <h2 className="section-title">About Me</h2>
@@ -13,7 +13,7 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hello! I’m Chamathka Jayodavi, a passionate and results-driven Software Engineering student with a strong interest in creating innovative and user-centered web solutions. With expertise in both frontend and backend technologies, I enjoy bringing ideas to life through clean, efficient, and scalable code. I have hands-on experience working with modern development tools and frameworks, and I am constantly learning to stay updated with emerging technologies. I am motivated by problem-solving, collaboration, and the opportunity to build impactful digital solutions that make a real difference.
+              Hello! I’m Chamathka Jayodavi, a passionate and results-driven <b>Software Engineering Undergraduate Student</b> with a strong interest in creating innovative and user-centered web solutions. With expertise in both frontend and backend technologies, I enjoy bringing ideas to life through clean, efficient, and scalable code. I have hands-on experience working with modern development tools and frameworks, and I am constantly learning to stay updated with emerging technologies. I am motivated by problem-solving, collaboration, and the opportunity to build impactful digital solutions that make a real difference.
             </p>
           </div>
 

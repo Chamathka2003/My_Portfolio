@@ -14,7 +14,7 @@ function Projects() {
       description: 'Blossom is a full-stack flower delivery web application developed using Spring Boot and React. Features include online ordering, product catalog, shopping cart, and delivery management system.',
       technologies: ['Spring Boot', 'React', 'MySQL', 'REST API'],
       link: '#',
-      github: '#',
+      github: 'https://github.com/Chamathka2003/Bloosm.git',
       images: ['/images/b1.png', '/images/b2.png', '/images/b3.png', '/images/b4.png']
     },
     {
@@ -23,7 +23,7 @@ function Projects() {
       description: 'An innovative IoT project showcased at TechWaves 2025, NIBM Galle Campus. A smart coffee mug that maintains optimal temperature using sensors and microcontroller technology.',
       technologies: ['IoT', 'Arduino', 'Sensors', 'C++'],
       link: '#',
-      github: '#',
+      github: 'https://github.com/Chamathka2003/Smart_Coffee_Mug_with_Temperature-_Controller.git',
       images: ['/images/s1.jpeg', '/images/s2.jpeg']
     },
     {
@@ -32,7 +32,7 @@ function Projects() {
       description: 'A comprehensive Farm Product and Sales Management System developed as Year 1 Final Project. Streamlines farm operations, product tracking, inventory management, and sales analytics.',
       technologies: ['Java', 'MySQL', 'JavaFX', 'JDBC'],
       link: '#',
-      github: '#',
+      github: 'https://github.com/Chamathka2003/Green_track_Farm_Managment_system.git',
       images: ['/images/gre1.jpeg', '/images/gre2.jpeg', '/images/gre3.jpeg']
     },
     {
@@ -41,7 +41,7 @@ function Projects() {
       description: 'An innovative IoT-based energy monitoring system designed to track and visualize real-time electricity usage. This application displays key power metrics such as total energy consumption, voltage, current, active power, frequency, and power factor through an interactive dashboard. The system also provides smart alerts for high energy usage and device activity, helping users optimize power consumption and improve energy efficiency.',
       technologies: ['Flutter', 'IoT', 'Energy Sensors', 'Firebase', 'Embedded Systems'],
       link: '#',
-      github: '#',
+      github: 'https://github.com/Chamathka2003/Smart_energy_Usage_Meter.git',
       images: ['/images/te2.jpeg', '/images/te3.jpeg', '/images/te4.jpeg', '/images/tem1.jpeg', '/images/t5.jpeg']
     },
     {
@@ -50,7 +50,7 @@ function Projects() {
       description: 'An interactive word puzzle game developed using vanilla JavaScript with a custom Linked List for word management. Features include word validation, scoring system, undo/redo functionality, riddles, and multiple difficulty levels. Designed with a modular architecture separating game logic, UI, and utilities for maintainability and scalability.',
       technologies: ['JavaScript', 'Linked List', 'DOM Manipulation', 'Game Logic', 'Modular Architecture'],
       link: '#',
-      github: '#',
+      github: 'https://github.com/Chamathka2003/SpelingChain_Puzzle_Game-.git',
       images: ['/images/w1.jpeg', '/images/w2.jpeg']
     }
   ];
