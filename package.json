@@ -2,7 +2,7 @@
   "name": "chamathka-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://Chamathka2003.github.io/myportfilo",
+  "homepage": "https://Chamathka2003.github.io/My_Portfolio",
   "description": "Portfolio website for Chamathka Jayodavi",
   "dependencies": {
     "emailjs-com": "^3.2.0",

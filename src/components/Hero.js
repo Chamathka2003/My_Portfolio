@@ -8,7 +8,7 @@ function Hero() {
         <div className="hero-content">
           <div className="profile-image-container">
             <img 
-              src="/images/profile.jpg" 
+              src={`${process.env.PUBLIC_URL}/images/profile.jpg`}
               alt="Chamathka Jayodavi" 
               className="profile-image"
             />

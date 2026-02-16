@@ -15,7 +15,7 @@ function Projects() {
       technologies: ['Spring Boot', 'React', 'MySQL', 'REST API'],
       link: '#',
       github: 'https://github.com/Chamathka2003/Bloosm.git',
-      images: ['/images/b1.png', '/images/b2.png', '/images/b3.png', '/images/b4.png']
+      images: [`${process.env.PUBLIC_URL}/images/b1.png`, `${process.env.PUBLIC_URL}/images/b2.png`, `${process.env.PUBLIC_URL}/images/b3.png`, `${process.env.PUBLIC_URL}/images/b4.png`]
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ function Projects() {
       technologies: ['IoT', 'Arduino', 'Sensors', 'C++'],
       link: '#',
       github: 'https://github.com/Chamathka2003/Smart_Coffee_Mug_with_Temperature-_Controller.git',
-      images: ['/images/s1.jpeg', '/images/s2.jpeg']
+      images: [`${process.env.PUBLIC_URL}/images/s1.jpeg`, `${process.env.PUBLIC_URL}/images/s2.jpeg`]
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ function Projects() {
       technologies: ['Java', 'MySQL', 'JavaFX', 'JDBC'],
       link: '#',
       github: 'https://github.com/Chamathka2003/Green_track_Farm_Managment_system.git',
-      images: ['/images/gre1.jpeg', '/images/gre2.jpeg', '/images/gre3.jpeg']
+      images: [`${process.env.PUBLIC_URL}/images/gre1.jpeg`, `${process.env.PUBLIC_URL}/images/gre2.jpeg`, `${process.env.PUBLIC_URL}/images/gre3.jpeg`]
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ function Projects() {
       technologies: ['Flutter', 'IoT', 'Energy Sensors', 'Firebase', 'Embedded Systems'],
       link: '#',
       github: 'https://github.com/Chamathka2003/Smart_energy_Usage_Meter.git',
-      images: ['/images/te2.jpeg', '/images/te3.jpeg', '/images/te4.jpeg', '/images/tem1.jpeg', '/images/t5.jpeg']
+      images: [`${process.env.PUBLIC_URL}/images/te2.jpeg`, `${process.env.PUBLIC_URL}/images/te3.jpeg`, `${process.env.PUBLIC_URL}/images/te4.jpeg`, `${process.env.PUBLIC_URL}/images/tem1.jpeg`, `${process.env.PUBLIC_URL}/images/t5.jpeg`]
     },
     {
       id: 5,
@@ -51,7 +51,7 @@ function Projects() {
       technologies: ['JavaScript', 'Linked List', 'DOM Manipulation', 'Game Logic', 'Modular Architecture'],
       link: '#',
       github: 'https://github.com/Chamathka2003/SpelingChain_Puzzle_Game-.git',
-      images: ['/images/w1.jpeg', '/images/w2.jpeg']
+      images: [`${process.env.PUBLIC_URL}/images/w1.jpeg`, `${process.env.PUBLIC_URL}/images/w2.jpeg`]
     }
   ];
 

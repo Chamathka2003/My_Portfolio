@@ -12,7 +12,7 @@ function Certificates() {
       title: 'TechWaves 2025 - Tech Exhibitor',
       issuer: 'NIBM - The City University',
       date: 'August 2025',
-      image: '/images/certificates/tecvave.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/certificates/tecvave.jpeg`,
       description: 'Certificate of Participation as Tech Exhibitor at TechWaves 2025'
     },
     {
@@ -20,7 +20,7 @@ function Certificates() {
       title: 'Generative AI for Business Leaders',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
-      image: '/images/certificates/genareteai.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/certificates/genareteai.jpeg`,
       skills: ['Artificial Intelligence for Business', 'Generative AI for Management', 'Generative AI']
     },
     {
@@ -28,7 +28,7 @@ function Certificates() {
       title: 'Microsoft Security Essentials',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
-      image: '/images/certificates/microsftessential.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/certificates/microsftessential.jpeg`,
       skills: ['Microsoft Security', 'Governance, Risk Management, and Compliance (GRC)', 'Cloud Security']
     },
     {
@@ -36,7 +36,7 @@ function Certificates() {
       title: 'Microsoft Azure AI Essentials',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
-      image: '/images/certificates/amchinglearnin.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/certificates/amchinglearnin.jpeg`,
       skills: ['Machine Learning', 'Microsoft Azure', 'Azure AI Foundry']
     },
     {
@@ -44,7 +44,7 @@ function Certificates() {
       title: 'Sustainability Foundations: Core Concepts',
       issuer: 'LinkedIn Learning',
       date: 'May 2025',
-      image: '/images/certificates/sustanability.jpeg',
+      image: `${process.env.PUBLIC_URL}/images/certificates/sustanability.jpeg`,
       skills: ['Environmental Sustainability']
     },
     {
@@ -52,7 +52,7 @@ function Certificates() {
       title: 'Machine Learning with Python',
       issuer: 'IBM',
       date: 'January 30, 2026',
-      image: '/images/certificates/ces1.png',
+      image: `${process.env.PUBLIC_URL}/images/certificates/ces1.png`,
       skills: ['Machine Learning', 'Python']
     }
   ];
